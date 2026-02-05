@@ -19,10 +19,17 @@ saved_model/
 *.pb
 *.tflite
 
-# Outputs
+# Outputs (ignore by default)
 results/**
 logs/
 runs/
+
+# Allow tracked documentation + curated samples
+!results/README.md
+!results/samples/
+!results/samples/**
+!results/samples/README.md
+
 
 # Jupyter
 .ipynb_checkpoints/
