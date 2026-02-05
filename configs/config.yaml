@@ -1,0 +1,26 @@
+seed: 10
+
+data:
+  image_size: 128
+  batch_size: 1
+  num_workers: -1
+
+train:
+  epochs: 50
+  lr: 1e-4
+  mixed_precision: true
+  reduce_lr_patience: 5
+  reduce_lr_factor: 0.5
+  reduce_lr_min_delta: 1e-7
+
+model:
+  num_rrg: 3
+  num_mrb: 2
+  channels: 64
+
+cam:
+  enabled: true
+  num_heads: 4
+  key_dim_div: 8
+  pooled: true
+  pool_stride: 4
